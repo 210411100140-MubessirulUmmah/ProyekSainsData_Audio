@@ -429,13 +429,13 @@ with tab4:
     ('Tanpa Normalisasi Data', 'Zscore Scaler', 'MinMax Scaler'))
     if scaler == 'Tanpa Normalisasi Data':
         st.title("Dataset Tanpa Preprocessing : ")
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
         df
     elif scaler == 'Zscore Scaler':
         st.title('Hasil Normalisasi Menggunakan Z-score')
 
         # Membaca data dari file CSV
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
 
         # Memisahkan kolom target (label) dari kolom fitur
         X = df.drop(columns=['Label'])  # Kolom fitur
@@ -467,7 +467,7 @@ with tab4:
         st.title('Hasil Normalisasi Menggunakan Min-Max')
 
         # Membaca data dari file CSV
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
 
         # Memisahkan kolom target (label) dari kolom fitur
         X = df.drop(columns=['Label'])  # Kolom fitur
@@ -500,7 +500,7 @@ with tab5:
     st.title("Modeling KNN")
 
     # Membaca data dari file CSV
-    df = pd.read_csv('hasil_statistik2.csv')
+    df = pd.read_csv('psd/hasil_statistik2.csv')
 
     # Memisahkan kolom target (label) dari kolom fitur
     X = df.drop(columns=['Label'])  # Kolom fitur
@@ -577,7 +577,7 @@ with tab5:
     if scaler == 'MinMax':
         st.write(" Accuracy Score Model KNN Setelah Proses Normalisasi dengan MinMax : ")
         # Membaca data dari file CSV
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
 
         # Memisahkan kolom target (label) dari kolom fitur
         X = df.drop(columns=['Label'])  # Kolom fitur
@@ -704,7 +704,7 @@ with tab6:
     scaler = st.radio("", ('ReduksiZscore', 'ReduksiMinMax'))
     if scaler == 'ReduksiMinMax':
         # Membaca data dari file CSV
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
 
         # Memisahkan kolom target (label) dari kolom fitur
         X = df.drop(columns=['Label'])  # Kolom fitur
@@ -778,7 +778,7 @@ with tab6:
 
     elif scaler == "ReduksiZscore":
         # Membaca data dari file CSV
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
 
         # Memisahkan kolom target (label) dari kolom fitur
         X = df.drop(columns=['Label'])  # Kolom fitur
@@ -859,7 +859,7 @@ with tab7:
     if scaler == 'Grid Search Z-Score':
         st.title('Grid Search Metode KNN dengan Z-Score Scaler')
         # Membaca data dari file CSV
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
 
         # Memisahkan kolom target (label) dari kolom fitur
         X = df.drop(columns=['Label'])  # Kolom fitur
@@ -963,7 +963,7 @@ with tab7:
     elif scaler == "Grid Search MinMax":
         st.title('Grid Search Metode KNN dengan MinMax Scaler')
         # Membaca data dari file CSV
-        df = pd.read_csv('hasil_statistik2.csv')
+        df = pd.read_csv('psd/hasil_statistik2.csv')
 
         # Memisahkan kolom target (label) dari kolom fitur
         X = df.drop(columns=['Label'])  # Kolom fitur
