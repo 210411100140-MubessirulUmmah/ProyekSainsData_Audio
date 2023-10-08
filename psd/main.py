@@ -371,8 +371,8 @@ with tab2:
 
     
 
-    image = Image.open(os.path.join("Folder Data Audio.png"))
-    st.image(image, caption='Dataset Audio', use_column_width=True)
+    profile_pic =Image.open("psd/Folder Data Audio.png")
+    st.image(profile_pic, caption='Dataset Audio', use_column_width=True)
 
 
 
