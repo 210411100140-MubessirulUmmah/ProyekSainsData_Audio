@@ -371,7 +371,7 @@ with tab2:
 
     
 
-    image = open('Folder Data Audio.png', 'rb').read()
+    image = Image.open(os.path.join("Folder Data Audio.png"))
     st.image(image, caption='Dataset Audio', use_column_width=True)
 
 
