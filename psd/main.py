@@ -3,7 +3,7 @@ import streamlit as st
 
 import matplotlib.pyplot as plt
 
-
+from PIL import image
 import IPython
 import numpy as np
 import scipy.stats
