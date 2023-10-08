@@ -385,7 +385,7 @@ with tab3:
     st.write("File audio akan dicari statistiknya. Fitur-fitur yang diekstraksi termasuk statistik dari frekuensi, statistik Zero Crossing Rate (ZCR), dan RMS (Root Mean Square) energi signal dari setiap file audio.")
     
 
-    df = pd.read_csv("hasil_statistik2.csv")
+    df = pd.read_csv("psd/hasil_statistik2.csv")
     st.write("Hasil Ekstraksi Fitur Ciri Audio : ")
     st.write(df)
     st.write("Penjelasan fitur-fitur yang ada")
