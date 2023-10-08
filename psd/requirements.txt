@@ -6,3 +6,26 @@ scikit-learn
 seaborn
 streamlit
 opencv-python-headless
+numpy
+pandas
+matplotlib
+sklearn
+scikit-learn
+seaborn
+streamlit
+opencv-python-headless
+matplotlib.pyplot
+IPython
+scipy.stats
+seaborn
+os
+pickle
+StandardScaler
+train_test_split
+MinMaxScaler
+KNeighborsClassifier
+import accuracy_score
+GridSearchCV
+PCA
+librosa
+scipy.stats
